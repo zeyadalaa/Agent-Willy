@@ -1,4 +1,6 @@
-
+import React from 'react'; 
+import Navbar from "../Components/Navbar"
+import Footer from "../Components/Footer"
 
 export const metadata = {
   title: 'Next.js',
@@ -8,11 +10,13 @@ export const metadata = {
 export default function Layout({ children }) {
   return (
     <html className="h-100" lang="en">
+      
       <body className="h-100">
+      <Navbar />
       <div className=" h-100 w-100">
-     
+       
         {children}
-     
+        <Footer />
         </div>
       </body>
     </html>
